@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloomlezwe Creations</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+:root{
+--gold:#c8a96b;
+--dark:#111;
+--light:#f6f4ef;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+
+body{background:var(--light);color:#333}
+
+/* NAVBAR */
+nav{
+position:sticky;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+padding:15px 8%;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+nav h2{font-family:"Playfair Display"}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+background:url("https://www.homeboundcustomdecor.com/cdn/shop/products/image_766075f6-3f18-42ba-ba7d-d4e97f05c36b.jpg?v=1629412067&width=1946") center/cover;
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:15px;
+}
+
+.hero h1{
+font-size:50px;
+font-family:"Playfair Display";
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:var(--gold);
+color:white;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* ABOUT */
+.about{
+background:white;
+padding:80px 10%;
+text-align:center;
+}
+
+.about h2{
+font-family:"Playfair Display";
+font-size:35px;
+margin-bottom:20px;
+}
+
+/* PRODUCTS */
+.products{
+padding:80px 8%;
+text-align:center;
+}
+
+.products h2{
+font-size:35px;
+margin-bottom:40px;
+font-family:"Playfair Display";
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-5px)}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{margin:15px}
+.card p{font-size:14px;padding:0 15px 20px}
+
+/* SMALL CONTACT BAR */
+.contact{
+background:#222;
+color:white;
+text-align:center;
+padding:25px 10px;
+font-size:14px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:15px;
+background:black;
+color:white;
+font-size:13px;
+}
+
+/* FLOAT WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#25D366;
+border-radius:50%;
+font-size:26px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:700px){
+.hero h1{font-size:32px}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Bloomlezwe Creations</h2>
+<div>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-box">
+<h1>Handcrafted Wooden Luxury</h1>
+<p>Beautiful personalised trays, boards & gifts.</p>
+<a class="btn" href="https://wa.me/27793661492?text=Hi%20I%20want%20to%20place%20an%20order">
+<i class="fab fa-whatsapp"></i> Place your order
+</a>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About Bloomlezwe Creations</h2>
+<p>
+We specialise in handcrafted wooden gifts perfect for weddings,
+birthdays, home décor and personalised presents. Every item is made
+with care and attention to detail.
+</p>
+</section>
+
+<section class="products" id="products">
+<h2>Our Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/71gR24CYmQL.jpg">
+<h3>Wooden Trays</h3>
+<p>Small R200 • Medium R350 • Large R400 • Foldable R450</p>
+</div>
+
+<div class="card">
+<img src="https://charlieandpine.com/cdn/shop/products/CuttingBoard-WreathLastNameYear2.jpg?v=1645574412&width=800">
+<h3>Chopping Boards</h3>
+<p>Small R180 • Medium R200 • Large R250</p>
+</div>
+
+<div class="card">
+<img src="https://i.etsystatic.com/39040721/r/il/1c3e75/4861562477/il_fullxfull.4861562477_nnow.jpg">
+<h3>Spoons & Gifts</h3>
+<p>Spoon R70 • Key Holder R50–R65 • Coasters R40</p>
+</div>
+
+</div>
+</section>
+
+<div class="contact">
+📞 079 366 1492 &nbsp; | &nbsp; 079 313 3287
+</div>
+
+<footer>
+© 2026 Bloomlezwe Creations
+</footer>
+
+<a class="whatsapp" href="https://wa.me/27793661492">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
